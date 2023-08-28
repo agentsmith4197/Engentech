@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(53, 50, 50);
+}
+.first{
+    /* height: 100vh; */
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+    border-radius: 50 50 50 50;
+}
