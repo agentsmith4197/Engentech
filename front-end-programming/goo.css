@@ -1,20 +1,33 @@
 body{
-    background-color: rgb(53, 50, 50);
+    margin: 0px;
+    background-color: ;
 }
-.first{
-    /* height: 100vh; */
-    color: aliceblue;
-    display: flex;
+.Header{
+    font-size: 30px;
+    color: blue;
+
+}
+.form{
+    width: 500px;
+    padding: 2px;
+
+}
+.form input{
+    width: 100%;
+    height: 25px;
+
+}
+.form p{
+    font-size: 20px;
+}
+.form button{
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    margin-top: 15px;
+    color: white;
+    background-color: blue;
     justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-.second{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-input{
-    border-radius: 50 50 50 50;
+    align-items: center 
+    ;
 }
