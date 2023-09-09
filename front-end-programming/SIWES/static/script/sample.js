@@ -1,9 +1,11 @@
 // Get references to the relevant HTML elements
 var selectElements = document.querySelectorAll("select[name='Products']");
+
 var quantityInputs = document.querySelectorAll("input[type='text']");
 var submitButtons = document.querySelectorAll("input[type='submit']");
 var totalProfitCell = document.querySelector("tr:last-child td:nth-child(8)");
-var totalAmountCell = document.querySelector("tr:last-child td:nth-child(9)");
+//var totalAmountCell = document.querySelector("tr:last-child td:nth-child(9)");
+var totalAmountCell = document.getElementById("add");
 
 // Initialize total profit and amount variables
 var totalProfit = 0;
