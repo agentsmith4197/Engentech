@@ -1,0 +1,31 @@
+.wrapper{
+    height: 100%;
+    width: 100%;
+    
+}
+.container{
+    height: 50px;
+    width: 100%;
+    
+}
+.container li{
+    display: inline;
+    word-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+    margin: 5px;
+    color: rgba(165, 42, 42, 0.6);
+    cursor: pointer;
+}
+.container li:hover{
+    color: brown;
+    box-shadow: 1px 1px 20px 1px rgba(255, 217, 0, 0.493);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    /* border: 1px solid white; */
+    padding: 5px;
+    background-color: rgba(255, 217, 0, 0.13);
+    border-radius: 30px;
+}
+.container ul{
+    float: right;
+      
+}

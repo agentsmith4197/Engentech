@@ -1,81 +1,116 @@
+body{
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .container{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: rgb(253, 252, 252);
     display: flex;
-    justify-content: center;
-    align-items: center;
     justify-items: center;
-    
+    align-items: center;
+    justify-content: center;
 }
 .wrapper{
-    border: 1px solid #ccc;
-    width: auto;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 2px 2px 4px #636060;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid red;
+    background-color: rgba(7, 7, 7, 0.664);
     width: 100%;
-    height: 50px;
-}
-.center{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 100vh;
-    border-radius: 10%;
+    
 }
 .table{
-    margin: 15px;
-    color: green;
-    box-shadow: 2px 2px 4px #ccc;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    
+    justify-items: center;
+    margin: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 4px #0707075d;
 }
-.table p{
-    font-size: 16px;
+.table thead{
+    color: rgb(221, 243, 60);
+    font-size: larger;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .table table{
-    border-collapse: collapse;
-
-}
-.table th,td{
-    border: 1px solid #ccc;
+    height: 50px;
     text-align: center;
-}
-.table input{
-    width: 100px;
-}
-
-
-.footer{
-    border-top: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: rgb(163, 207, 247);
     
 }
-.footer img{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    margin-left: 10px;
-    
-}
-.footer p{
-    z-index: 1000px;
-    float:right;
+.table input[type="submit"]{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(221, 170, 104);
+    font-size: large;
+    color: rgba(7, 1, 1, 0.795);
+    cursor: pointer;
 
+}
+.table input[type="submit"]:hover{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.39);
+    color: rgb(243, 141, 7);
+}
+.table input[type="submit"]:active{
+    transform: scale(0.8);
+}
+.table button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 3px solid rgb(163, 207, 247); */
+    background-color: rgba(255, 255, 255, 0);
+    font-size: larger;
+    font-weight: lighter;
+    color: rgb(221, 243, 60);
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0);
+}
+.table button:hover{
+    background-color: rgba(75, 120, 160, 0.473);
+    border: none;
+    width: 60%;
+    padding: 15px;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: 1px 1px 1px 2px rgb(163, 207, 247);
+}
+.table button:active{
+    transform: scale(0.8);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.table input[type="text"]{
+    border: none;
+    background-color: rgba(95, 145, 189, 0.466);
+    color: rgb(163, 207, 247);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: large;
+}
+.table select{
+    background-color: rgba(7, 7, 7, 0);
+    border: none;
+    color: rgb(163, 207, 247);
+    padding: 10px;
+}
+.Profit{
+    display: none;
+}
+.area{
+    color: rgb(221, 243, 60);
+    font-size: large;
+    font-weight: bold;
+}
+.head{
+    color: rgb(221, 243, 60);
 }

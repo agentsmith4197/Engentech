@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style/singUp.css">
     <link rel="stylesheet" href="static/Fonts/font-awesome-4.7.0/css/font-awesome.css">
-    <title>Document</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="wrapper">
@@ -18,23 +18,28 @@
                 </div>
                 <div class="form">
                     <div class="name">
-                        <input type="text" placeholder="FullName">
+                        <label for="name">Full name:</label>
+                        <input type="text" placeholder="FullName" name="name">
                         <i class="fa fa-user" aria-hidden="true"></i></div>
                     <div class="Email">
-                        <input type="email" placeholder="Email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <label for="email">Email:
+                        <input type="email" placeholder="Email" name="email">
+                        <i class="fa fa-envelope" aria-hidden="true" ></i></label></div>
                     <div class="pass">
-                        <input type="password" placeholder="Password(minimum 6 characters)">
-                        <i class="fa fa-lock" aria-hidden="true"></i></div>
+                        <label for="password">Password:
+                        <input type="password" placeholder="Password(minimum 6 characters)" name="password">
+                        <i class="fa fa-lock" aria-hidden="true"></i></label></div>
                     <div class="confirm">
-                        <input type="password" placeholder="Confirm Password">
-                        <i class="fa fa-lock" aria-hidden="true"></i></div>
+                        <label for="confirm">Confirm Password:
+                        <input type="password" placeholder="Confirm Password" name="confirm">
+                        <i class="fa fa-lock" aria-hidden="true"></i></label></div>
                 </div>
                 <button>Create Account</button>
                 <div class="btn">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <i class="fa fa-google" aria-hidden="true"></i>
+                    <!-- <i class="fa-solid fa-spinner fa-spin-pulse"></i> -->
                 </div>
                 <div class="signmess">
                     <p>Champions Sign Up | Design By StackHaven</p>

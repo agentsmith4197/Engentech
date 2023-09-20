@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 247, 245);
+    /* position: fixed; */
+    
+}
+.section3 img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.section3{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    justify-items: center;
+    margin: 15px;
+}
+.messenger{
+
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+.messenger:hover{
+    color: blue;
+}
+.messenger:active{
+    background-color: rgba(238, 243, 248, 0.822);
+}
+.bell{
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+.bell:hover{
+    color: blue;
+    
+}
+.bars{
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+.bars:hover{
+    color: blue;
+}
+.section2{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    
+}
+.house{
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+    width: 80px;
+    height: 100%;
+    text-align: center;
+}
+.house:hover{
+    color: blue;
+}
+.house:active{
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+.store{
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+    width: 80px;
+    text-align: center   
+}
+.store:hover{
+    color: blue;
+}
+.store:active{
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+.user{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    width: 80px;
+    text-align: center     
+}
+.user:hover{
+    color: blue;
+
+}
+.user:active{
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+.gamepad{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    width: 80px;
+    text-align: center
+}
+.gamepad:hover{
+    color: blue;
+}
+.gamepad:active{
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+.section1{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+.facebook{
+    font-size: 30px;
+    margin: 10px;
+    color: blue;
+    cursor: pointer;
+}
+.navbar input[type="text"]{
+    padding: 5px;
+}

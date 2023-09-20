@@ -3,63 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/Fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="static/style/Sales_Book.css">
-    <title>Document</title>
+    <title>Sales Book</title>
 </head>
     <body>
         <div class="container">
             <div class="wrapper">
-                <div class="header">
+                <!-- <div class="header">
                     <h1>MY SALES BOOK</h1>
-                </div>
-                <div class="center">
+                </div> -->
+                
                     <div class="table">
                         <table border="1" id="PricetTable">
-                            <tr>
+                            <thead>
                                 <td colspan="10"><h1>Sales Record</h1></td>
-                            </tr>
+                            </thead>
                             <tr>
-                                <td colspan="5"><h2>Products</h2></td>
-                                <td colspan="5"><h2>Sales</h2></td>
+                                <td colspan="5" class="head"><h2>Products</h2></td>
+                                <td colspan="5" class="head"><h2>Sales</h2></td>
                             </tr>
+                            <th>
+                                <td class="area"><p>Products</p></td>
+                                <td class="area"><p>Stocks</p></td>
+                                <td class="area"><p>Cost Price</p></td>
+                                <td class="area"><p>Selling Price</p></td>
+                                <td class="area"><p>Products</p></td>
+                                <td class="area"><p>Quantity</p></td>
+                                <td colspan="3" class="area"><p>Amount</p></td>
+                            </th>
                             <tr>
-                                <td><p>S/N</p></td>
-                                <td><p>Products</p></td>
-                                <td><p>Stocks</p></td>
-                                <td><p>Cost Price</p></td>
-                                <td><p>Selling Price</p></td>
-                                <td><p>Products</p></td>
-                                <td><p>Quantity</p></td>
-                                <td colspan="2"><p>Amount</p></td>
-                            </tr>
-                            <tr>
-                                <td><p>1</p></td>
+                                <td ><p>1</p></td>
                                 <td><p>Beans</p></td>
                                 <td><p>15</p></td>
-                                <td><p>30000</p></td>
-                                <td><p>40000</p></td>
+                                <td><span id="costPrice1">30000</span></td>
+                                <td><span id="sellingPrice1">40000</span></td>
                                 <td><label for="Products"></label>
                                     <select name="Products" id="Products1">
+                                        <option value="Products6"></option>
                                         <option value="Products1"><p>Beans</p></option>
                                         <option value="Products2">Soya Beeans</option>
                                         <option value="Products3">Rice</option>
                                         <option value="Products4">Garri</option>
-                                        <option value="Products5">groundnut</option>
+                                        <option value="Products5">Groundnut</option>
+                                        
                                     </select>
                                 </td>
-                                 <td><input type="text" id="Quantity1"></td>
-                                <td><p>0.00</p></td>
+                                 <td><input type="text" id="Quantity1"> </td>
+                                 <td><span class="amount" id="amount1"><p>00.00</p></span></td>
+                                 <td><span class="Profit" id="profit1"><p>00.00</p></span></td>
                                 <td><p><input type="submit" id="Calculate1" class="calculateButton"></p></td>
 
                             </tr>
                             <tr>
-                                <td><p>2</p></td>
+                                <td ><p>2</p></td>
                                 <td><p> Soya Beans </p></td>
                                 <td><p>15</p></td>
-                                <td><p>33000</p></td>
-                                <td><p>37000</p></td>
+                                <td><span id="costPrice2">30000</span></td>
+                                <td><span id="sellingPrice2">37000</span></td>
                                 <td><label for="Products"></label>
                                     <select name="Products" id="Products2">
+                                        <option value="Products6"></option>
                                         <option value="Products1"><p>Beans</p></option>
                                         <option value="Products2">Soya Beeans</option>
                                         <option value="Products3">Rice</option>
@@ -68,17 +72,19 @@
                                     </select>
                                 </td>
                                  <td><input type="text" id="Quantity2"></td>
-                                <td><p>0.00</p></td>
+                                 <td><span class="amount" id="amount2"><p>00.00</p></span></td>
+                                 <td><span class="Profit" id="profit2"><p>00.00</p></span></td>
                                 <td><p><input type="submit" id="Calculate2" class="calculateButton"></p></td>
                             </tr>
                             <tr>
-                                <td><p>3</p></td>
+                                <td ><p>3</p></td>
                                 <td><p>Rice</p></td>
                                 <td><p>25</p></td>
-                                <td><p>40000</p></td>
-                                <td><p>50000</p></td>
+                                <td id="costPrice3"><p>40000</p></td>
+                                <td id="sellingPrice3"><p>50000</p></td>
                                 <td><label for="Products"></label>
                                     <select name="Products" id="Products3">
+                                        <option value="Products6"></option>
                                         <option value="Products1"><p>Beans</p></option>
                                         <option value="Products2">Soya Beeans</option>
                                         <option value="Products3">Rice</option>
@@ -87,36 +93,40 @@
                                     </select>
                                 </td>
                                 <td><input type="text" id="Quantity3" class="quantity-input"></td>
-                                <td><p>0.00</p></td>
+                                <td><span class="amount" id="amount3"><p>00.00</p></span></td>
+                                <td><span class="Profit" id="profit3"><p>00.00</p></span></td>
                                 <td><p><input type="submit" id="Calculate3" class="calculateButton"></p></td>
                             </tr>
                             <tr id="row1">
-                                <td><p>4</p></td>
+                                <td ><p>4</p></td>
                                 <td><p>Garri</p></td>
                                 <td><p>25</p></td>
-                                <td><span id="costPrice1">45000</span></td>
-                                <td><span id="sellingPrice1">55000</span></td>
+                                <td><span id="costPrice4">45000</span></td>
+                                <td><span id="sellingPrice4">55000</span></td>
                                 <td><label for="Products"></label>
-                                    <select name="Products" id="Products1">
-                                        <option value="products1"><p>Beans</p></option>
+                                    <select name="Products" id="Products4">
+                                        <option value="Products6"></option>
+                                        <option value="Products1"><p>Beans</p></option>
                                         <option value="Products2">Soya Beeans</option>
                                         <option value="Products3">Rice</option>
                                         <option value="Products4">Garri</option>
                                         <option value="Products5">Groundnut</option>
                                     </select>
                                 </td>
-                                 <td><input type="text" id="Quantity4" class="quantity-input" value="1" onblur="get()"></td>
-                                <td id="add"><span class="amount" id="amount1"></span></td>
+                                 <td><input type="text" id="Quantity4" class="quantity-input"></td>
+                                <td><span class="amount" id="amount4"><p>00.00</p></span></td>
+                                <td><span class="Profit" id="profit4"><p>00.00</p></span></td>
                                 <td><input type="submit" id="Calculate4"></td>
                             </tr>
                             <tr>
-                                <td><p>5</p></td>
+                                <td ><p>5</p></td>
                                 <td><p>Groundnut</p></td>
                                 <td><p>10</p></td>
-                                <td><p>25000</p></td>
-                                <td><p>35000</p></td>
+                                <td id="costPrice5"><p>25000</p></td>
+                                <td id="sellingPrice5"><p>35000</p></td>
                                 <td><label for="Products"></label>
                                     <select name="Products" id="Products5">
+                                        <option value="Products6"></option>
                                         <option value="Products1"><p>Beans</p></option>
                                         <option value="Products2">Soya Beeans</option>
                                         <option value="Products3">Rice</option>
@@ -125,37 +135,25 @@
                                     </select>
                                 </td>
                                  <td><input type="text" id="Quantity5" class="quantity-input"></td>
-                                <td><p>0.00</p></td>
+                                 <td><span class="amount" id="amount5"><p>00.00</p></span></td>
+                                 <td><span class="Profit" id="profit5"><p>00.00</p></span></td>
                                 <td><p><input type="submit" onclick="" id="Calculate5" class="calculateButton"></p></td>
                             </tr>
                             <tr>
-                                <td colspan="7"><p>Total</p></td>
-                                <td colspan="2"><p>Products</p></td>
+                                <td colspan="7"><button id="total">Total</button></td>
+                                <td colspan="3"><span class="amount" id="totalAmount"><p>00.00</p></span></td>
 
                             </tr>
                             <tr>
-                                <td colspan="7"><p>Check profit</p></td>
-                                <td colspan="2"><p>Products</p></td>
+                                <td colspan="7"><button id="check">Check Profit</button></td>
+                                <td colspan="3"><span class="amount" id="Profit"><p>00.00</p></span></td>
                                 
 
                             </tr>
                         </table>
                     </div>
-                </div>
-            
-                <div class="footer">  
-                    <footer>
-                        <p>&copy;2023/copyright</p>
-                        <img src="static/images/facebook.png" alt="" >
-                        <img src="static/images/whasapp.jpg" alt="" >
-                        <img src="static/images/my logo.png" alt="" >
-                            
-                    </footer>
-                    
-                </div>
             </div>
         </div>
         <script src="static/script/Sales_Book.js"></script>
-        <script src="static/script/sample.js"></script>
     </body>
 </html>

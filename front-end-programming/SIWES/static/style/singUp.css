@@ -1,11 +1,12 @@
 body{
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .wrapper{
     background-image: url("../images/snart.jpg");
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-size:cover;
 }
 .container{
@@ -20,15 +21,15 @@ body{
 }
 .middle{
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(241, 13, 13, 0.473);
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 5%;
-    height: 100%;
-    box-shadow: 2px 2px 4px #ccc;
+    /* margin-top: 5%; */
+    /* height: 70%; */
+    box-shadow: 2px 2px 8px #4e03fd85;
     border-radius: 15px;
 }
 .middle input{
@@ -43,7 +44,7 @@ body{
 }
 .middle input:active{
     border: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.685);
 
 }
 .middle i{
@@ -54,12 +55,17 @@ body{
 }
 .form{
     width: 100%;
+
+}
+.form label{
+    margin: 15px;
+    color: rgba(255, 255, 255, 0.692);
 }
 .form i{
     position: relative;
-    z-index: 100px;
+    /* z-index: 1000000px; */
     left: 90%;
-    top: -25px;
+    top: -23px;
 }
 .middle button{
     width: 95%;
@@ -69,6 +75,7 @@ body{
     font-size: large;
     font-weight: bold;
     border: 1px solid black;
+    border-radius: 50px;
    
 }
 .middle button:active{
@@ -80,7 +87,8 @@ body{
     border: none;
 }
 .head{
-    margin-bottom: 5%;
+    font-size: larger;
+    font-weight: bold;
     color: aquamarine;
 }
 .btn{
@@ -92,4 +100,5 @@ body{
 .signmess{
     font-size: 20px;
     font-weight: 100px;
+    margin-bottom: 5px;
 }
